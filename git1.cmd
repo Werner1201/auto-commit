@@ -1,0 +1,1 @@
+git status -s | python auto-commit.py
