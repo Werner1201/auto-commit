@@ -1,1 +1,1 @@
-git status -s | python auto-commit.py
+git status -s | python %~dp0auto-commit.py 
