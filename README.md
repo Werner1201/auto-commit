@@ -12,7 +12,7 @@ Aqui apenas fornecerei um tutorial em Windows pois √© o que eu preciso e o prop√
 3. Copie e Cole `auto-commit.cmd` para o repositorio que deseja monitorar
 4. Clique no Menu Start e digite: `Run`
 5. No menu de Executar digite: `shell:startup`
-6. 4. Crie um atalho para o `auto-commit.cmd` e recorte ele (Ctrl + X)
+6. Crie um atalho para o `auto-commit.cmd` e recorte ele (Ctrl + X)
 7. Na Pasta aberta cole o arquivo recortado
 
 E assim sempre que voce ligar o computador as mudancas feitas nessa pasta serao salvas
