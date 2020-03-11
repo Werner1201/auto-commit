@@ -16,7 +16,6 @@ def __init__():
 
 # verifica se o retorno do pipe do git status eh de alteracoes ou nao
 
-
 def output_reading(output: list) -> bool:
     # verifica se eh uma instancia de lista e se o tamanho e maior q 1
     teste = isinstance(output, list)
