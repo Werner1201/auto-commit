@@ -20,7 +20,7 @@ def __init__():
 def output_reading(output: list) -> bool:
     teste = isinstance(output, list)
     print(teste)
-    if teste:
+    if teste and output[0] != False:
         for char in output[0]:
             print(char)
             if char == 'M':
