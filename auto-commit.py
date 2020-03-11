@@ -74,6 +74,7 @@ def if_changed(conclusion: bool, internet: bool, data: str) -> None:
             commit()
             # se tiver conexao de internet ele ira fazer um push se nao saira do programa e esperara a proxima execucao
             push(internet)
+            sys.exit(0)
         else:
             print("Nao Tem mudancas")
             sys.exit(0)
