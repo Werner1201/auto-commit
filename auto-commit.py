@@ -19,7 +19,6 @@ def __init__():
 
 def output_reading(output: list) -> bool:
     teste = isinstance(output, list)
-    print(teste)
     if teste and output.__len__() >= 1:
         for char in output[0]:
             print(char)
