@@ -75,11 +75,9 @@ def if_changed(conclusion: bool, internet: bool, data: str) -> None:
             push(internet)
         else:
             print("Nao Tem mudancas")
-            print("Tentando enviar mudancas anteriores")
-            push(internet)
             sys.exit()
     except:
-        print("erro")
+        print("erro, Sem internet, execute novamente mais tarde")
 
 
 __init__()
