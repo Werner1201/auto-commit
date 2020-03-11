@@ -9,21 +9,22 @@ import subprocess as cmd
 def __init__():
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    data = sys.stdin.read()
+    data = sys.stdin.readlines()
     data2 = loop.run_until_complete(internet_connection())
     if_changed(output_reading(data), data2, data)
 
 
-# verifica se o retorno do pipe do git status eh vazio ou nao
+# verifica se o retorno do pipe do git status eh de alteracoes ou nao
 
 
-def output_reading(output: str) -> bool:
-    if(output.__len__() > 1):
-        print(f"{output}")
-        return True
-    else:
-        print("Nada a adicionar")
-        return False
+def output_reading(output: list) -> bool:
+    for char in output[0]:
+        if char == 'M':
+            print(f"{output}")
+            return True
+
+    print("Nada a Adicionar")
+    return False
 
 # Checka internet
 
