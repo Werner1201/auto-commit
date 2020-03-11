@@ -18,13 +18,14 @@ def __init__():
 
 
 def output_reading(output: list) -> bool:
-    for char in output[0]:
-        if char == 'M':
-            print(f"{output}")
-            return True
-
-    print("Nada a Adicionar")
-    return False
+    if output is list:
+        for char in output[0]:
+            if char == 'M':
+                print(f"{output}")
+                return True
+    else:
+        print("Nada a Adicionar")
+        return False
 
 # Checka internet
 
