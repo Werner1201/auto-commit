@@ -18,7 +18,9 @@ def __init__():
 
 
 def output_reading(output: list) -> bool:
-    if isinstance(output, list):
+    teste = isinstance(output, list)
+    print(teste)
+    if teste:
         for char in output[0]:
             print(char)
             if char == 'M':
