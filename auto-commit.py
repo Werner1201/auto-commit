@@ -18,8 +18,9 @@ def __init__():
 
 
 def output_reading(output: list) -> bool:
-    if output is list:
+    if output is not list:
         for char in output[0]:
+            print(char)
             if char == 'M':
                 print(f"{output}")
                 return True
@@ -75,8 +76,10 @@ def if_changed(conclusion: bool, internet: bool, data: str) -> None:
             push(internet)
         else:
             print("Nao Tem mudancas")
-            sys.exit()
-    except:
+            sys.exit(0)
+    except SystemExit:
+        print("Saindo...")
+    else:
         print("erro, Sem internet, execute novamente mais tarde")
 
 
