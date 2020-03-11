@@ -18,6 +18,7 @@ def __init__():
 
 
 def output_reading(output: list) -> bool:
+    # verifica se eh uma instancia de lista e se o tamanho e maior q 1
     teste = isinstance(output, list)
     if teste and output.__len__() >= 1:
         for char in output[0]:
